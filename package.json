@@ -1,0 +1,17 @@
+{
+  "name": "prompt-generator-fullstack-site",
+  "version": "2.0.0",
+  "description": "A full-stack website with a zero-dependency Node.js backend and vanilla frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "full-stack",
+    "node",
+    "vanilla-js"
+  ],
+  "license": "MIT"
+}
