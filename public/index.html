@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Stack Project Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Project Tracker</h1>
+        <p class="subtitle">A simple full-stack website with live API calls.</p>
+
+        <form id="project-form">
+          <div class="field">
+            <label for="title">Project Title</label>
+            <input id="title" name="title" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+              <option value="Planned">Planned</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+
+          <button type="submit">Add Project</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Projects</h2>
+        <ul id="project-list" class="project-list"></ul>
+      </section>
+    </main>
+
+    <template id="project-item-template">
+      <li class="project-item">
+        <div>
+          <h3 class="project-title"></h3>
+          <p class="project-description"></p>
+          <small class="project-status"></small>
+        </div>
+        <button class="delete-btn" type="button">Delete</button>
+      </li>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
